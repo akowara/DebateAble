@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>DebateAble</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- BANNER WITH SIGN UP AND LOG IN-->
+  <div class="banner">
+    <img src="images/Logo.png" alt="DebateAble Logo with Text" style="width:25%;height:auto;padding-left:10px;">
+    <input class = "search_bar"type="text" placeholder="Search...">
+    <button type="button" class="btn btn-primary" id = "search_button">&#x1F50E;&#xFE0E;</button>
+    <button type="button" class="btn btn-danger">Log In</button>
+    <button type="button" class="btn btn-primary">Sign Up</button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="margin-top:auto;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expended = "false" aria-label = "Toggle navigation">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <a class = "navbar-brand" href="" >Which side will you choose?</a>
+        <ul class = "navbar-nav ml-auto">
+          <li class = "nav-item">
+            <a class = "nav-link"href="" style="color:white;">Home</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link"href="" style="color:white;">#Categories</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link"href="" style="color:white;">Live</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link"href="" style="color:white;">More</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="previews">
+
+    <div class="preview_slide">
+      <img src="images/mcdavid.jpg">
+      <div class="preview_text text">
+        <br>Who was more dominant in their prime: Sidney Crosby or Connor McDavid? <br>
+        <button type="button" class="btn btn-info">Join Debate!</button>
+      </div>
+    </div>
+
+    <div class="preview_slide">
+      <img src="images/babyVbaby.jpg">
+      <div class="preview_text">
+        <br>Which Baby is the best Baby: DaBaby or Lil Baby?<br>
+        <button type="button" class="btn btn-danger">Join Debate!</button>
+      </div>
+    </div>
+
+    <div class="preview_slide">
+      <img src="images/RobbieGauthier2.jpg">
+      <div class="preview_text">
+        <br>Who was more dominant in their prime:Sidney Crosby or Connor McDavid?<br>
+        <button type="button" class="btn btn-danger">Join Debate!</button>
+      </div>
+    </div>
+
+    <a class="next" onclick="moveSlide(1)" style="color:white">&#8667;</a>
+    <a class="prev" onclick="moveSlide(-1)" style="color:white">&#8666;</a>
+
+    <div class = "dots">
+      <span class="dot" onclick="toSlide(1)"></span>
+      <span class="dot" onclick="toSlide(2)"></span>
+      <span class="dot" onclick="toSlide(3)"></span>
+    </div>
+
+  </div>
+  <br>
+
+
+
+  <br>
+
+  <div class="popular-heading">
+    <h4>Popular Debate Topics</h4>
+  </div>
+
+
+
+
+
+
+<div class="popular">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+    <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <div id="trending">
+    <table class="trendtable" ;style="width:1000px">
+      <tr>
+        <td class="trendheader"><a href="politics.html">Politics</a></td>
+        <td class="trendheader"><a href="global_news.html">Global News</a></td>
+        <td class="trendheader"><a href="buisness.html">Buisness</a></td>
+      </tr>
+      <tr>
+        <td>
+          <img id="politics_image" src="images/communist.png" alt="communist flag">
+        </td>
+        <td>
+          <img id="global_news_image" src="images/israel.jpg" alt="israel flag">
+        </td>
+        <td>
+          <img id="buisness_image" src="images/elon musk.jpg" alt="israel flag">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p id="politics_text">
+            Trending: Communism is useful if power is used properly.
+          </p>
+        </td>
+        <td>
+          <p id="global_news_text">
+            Trending: Bystander countries need to take war like measures to
+            stop Israel from destroying Palestine.
+          </p>
+        </td>
+        <td>
+          <p id="buisness_image">
+            Trending: Elon Musk has too much power in stock market and should be
+            punished for his unjust manipulation.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="trendheader"><a href="sports.html">Sports</a></td>
+        <td class="trendheader"><a href="pop_culture.html">Music</a></td>
+        <td class="trendheader"><a href="beauty.html">Beauty</a></td>
+      </tr>
+      <tr>
+        <td>
+          <img id="sports_image" src="images/leafs.jpg" alt="maple leafs">
+        </td>
+        <td>
+          <img id="music_image" src="images/dababy.jpg" alt="dababy">
+        </td>
+        <td>
+          <img id="beauty_image" src="images/kardashians.jpg" alt="kardashians">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p id="sports_text">
+            Trending: Communism is useful if power is used properly.
+          </p>
+        </td>
+        <td>
+          <p id="music_text">
+            Trending: Bystander countries need to take war like measures to
+            stop Israel from destroying Palestine.
+          </p>
+        </td>
+        <td>
+          <p id="beauty_text">
+            Trending: Elon Musk has too much power in stock market and should be
+            punished for his unjust manipulation.
+          </p>
+        </td>
+      </tr>
+      <table>
+  </div>
+  <script src="index.js"></script>
+</body>
+<hr>
+
+<footer>
+
+</footer>
+
+</html>

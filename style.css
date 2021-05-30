@@ -1,0 +1,224 @@
+.banner{
+  position: fixed;
+  background-color: white;
+  z-index:10;
+  height:auto;
+  width:100%;
+  top:0;
+  overflow: hidden;
+}
+
+body{
+  width:100%;
+  height:auto;
+}
+
+.btn{
+  white-space: normal;
+}
+.search_bar{
+  width:25%;
+  height:40px;
+}
+
+
+.main_search input{
+  float: right;
+  padding: 6px;
+  margin-top: 7px;
+  margin-right: 15px;
+  font-size: 15px;
+  width: 500px;
+  border:none;
+}
+
+.main_search{
+  padding-left: 20px;
+}
+.previews{
+  max-width: 50%;
+  position: relative;
+  padding-left:5%;
+  padding-top:auto;
+}
+
+.preview_slide{
+  position:relative;
+  display:inline-block;
+
+}
+
+.preview_slide:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: linear-gradient(#ffffff00,black);
+}
+
+.preview_slide img{
+  display:inline;
+  height:auto;
+  width:100%;
+
+}
+/* Caption text */
+.preview_text {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  z-index:1;
+  padding-left:5%;
+  padding-right:5%;
+  position: absolute;
+}
+.bth{
+  width:auto;
+}
+
+.preview_text::before{
+  content: "Trending Debate Alert:";
+  z-index: 1;
+  color:red;
+}
+
+.trendheader a{
+  color:black;
+  text-decoration:none;
+  font-size:20px;
+  font-family: verdana;
+  font-weight: bold;
+  padding-top:50px;
+  padding-right: 200px;
+  width:1000px;
+  padding-top:50px;
+}
+
+.trendtable img{
+  height:200px;
+  width:375px;
+}
+
+.trendtable td{
+  padding-right:75px;
+  padding-top:25px;
+}
+
+.trendtable p{
+  width:100%;
+  text-decoration:none;
+  font-size:20px;
+  font-family: verdana;
+  width:375px;
+  height:100px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.preview_slide {display: none}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: white;
+  border-radius: 45%;
+  border: solid;
+  border-color:blue;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.dots{
+  text-align: center;
+  opacity:25%;
+  padding-top: 25px;
+}
+
+.active, .dot:hover {
+  background-color: blue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.popular-heading{
+  width:100%;
+  height: 52px;
+  background-color: #0275d8;
+
+}
+
+.popular-heading h4{
+  color:white;
+  text-align: center;
+  line-height: 52px;
+}
+
+
+.col{
+  
+  height:auto;
+}
