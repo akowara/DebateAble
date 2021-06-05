@@ -9,7 +9,7 @@
 }
 
 body{
-  width:100%;
+
   height:auto;
 }
 
@@ -20,7 +20,6 @@ body{
   width:25%;
   height:40px;
 }
-
 
 .main_search input{
   float: right;
@@ -36,7 +35,7 @@ body{
   padding-left: 20px;
 }
 .previews{
-  max-width: 50%;
+  width:800px;
   position: relative;
   padding-left:5%;
   padding-top:auto;
@@ -103,7 +102,11 @@ body{
 .trendtable td{
   padding-right:75px;
   padding-top:25px;
+  padding-left: 60px;
+  margin:auto;
+  width:
 }
+
 
 .trendtable p{
   width:100%;
@@ -199,7 +202,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -217,8 +219,48 @@ img {vertical-align: middle;}
   line-height: 52px;
 }
 
-
 .col{
-  
+  height:100px;
+  padding-left: 50px;
+  width:20px;
+
+}
+
+.login{
+  width:800px;
+  border:solid;
   height:auto;
+  position: relative;
+  margin:150px auto 100px auto;
+  text-align: center;
+}
+
+.login img{
+  padding-top: 25px;
+  width:150px;
+  height: auto;
+  display:block;
+  margin:auto;
+}
+
+.login label{
+  padding-top:25px;
+
+}
+
+.login input{
+  width:400px;
+}
+
+.login button{
+  margin-bottom:25px;
+  width:400px;
+}
+
+#rememberme{
+  width:auto;
+}
+
+.login p{
+  margin:25px auto 25px auto;
 }

@@ -15,29 +15,40 @@
   <!-- BANNER WITH SIGN UP AND LOG IN-->
   <div class="banner">
     <img src="images/Logo.png" alt="DebateAble Logo with Text" style="width:25%;height:auto;padding-left:10px;">
-    <input class = "search_bar"type="text" placeholder="Search...">
-    <button type="button" class="btn btn-primary" id = "search_button">&#x1F50E;&#xFE0E;</button>
-    <button type="button" class="btn btn-danger">Log In</button>
-    <button type="button" class="btn btn-primary">Sign Up</button>
+    <input class="search_bar" type="text" placeholder="Search...">
+    <button type="button" class="btn btn-primary" id="search_button">&#x1F50E;&#xFE0E;</button>
+    <button id = "loginBtn" type="button" class="btn btn-danger">Log In</button>
+    <script type="text/javascript">
+      document.getElementById("loginBtn").onclick = function() {
+        location.href = "login.html";
+      };
+    </script>
+
+    <button id = "signupBtn" type="button" class="btn btn-primary">Sign Up</button>
+    <script type="text/javascript">
+      document.getElementById("signupBtn").onclick = function() {
+        location.href = "signup.html";
+      };
+    </script>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="margin-top:auto;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expended = "false" aria-label = "Toggle navigation">
-        <span class = "navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expended="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <a class = "navbar-brand" href="" >Which side will you choose?</a>
-        <ul class = "navbar-nav ml-auto">
-          <li class = "nav-item">
-            <a class = "nav-link"href="" style="color:white;">Home</a>
+        <a class="navbar-brand" href="">Which side will you choose?</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">Home</a>
           </li>
-          <li class = "nav-item">
-            <a class = "nav-link"href="" style="color:white;">#Categories</a>
+          <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">#Categories</a>
           </li>
-          <li class = "nav-item">
-            <a class = "nav-link"href="" style="color:white;">Live</a>
+          <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">Live</a>
           </li>
-          <li class = "nav-item">
-            <a class = "nav-link"href="" style="color:white;">More</a>
+          <li class="nav-item">
+            <a class="nav-link" href="" style="color:white;">More</a>
           </li>
         </ul>
       </div>
@@ -79,7 +90,7 @@
     <a class="next" onclick="moveSlide(1)" style="color:white">&#8667;</a>
     <a class="prev" onclick="moveSlide(-1)" style="color:white">&#8666;</a>
 
-    <div class = "dots">
+    <div class="dots">
       <span class="dot" onclick="toSlide(1)"></span>
       <span class="dot" onclick="toSlide(2)"></span>
       <span class="dot" onclick="toSlide(3)"></span>
@@ -97,10 +108,7 @@
   </div>
 
 
-
-
-
-
+  <!--
 <div class="popular">
   <div class="row">
     <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
@@ -112,9 +120,6 @@
     <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
 
     </div>
-  </div>
-
-  <div class="row">
     <div class="col-lg-3 col-md-4 col sm-6" style="border: 1px solid">
 
     </div>
@@ -126,6 +131,7 @@
     </div>
   </div>
 </div>
+-->
 
 
 
@@ -135,7 +141,7 @@
 
 
 
-  <div id="trending">
+  <div class="trending">
     <table class="trendtable" ;style="width:1000px">
       <tr>
         <td class="trendheader"><a href="politics.html">Politics</a></td>
