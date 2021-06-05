@@ -37,8 +37,8 @@ body{
 .previews{
   width:800px;
   position: relative;
-  padding-left:5%;
   padding-top:auto;
+  margin-left: 250px;
 }
 
 .preview_slide{
@@ -58,7 +58,7 @@ body{
 
 .preview_slide img{
   display:inline;
-  height:auto;
+  height:525px;
   width:100%;
 
 }
@@ -102,9 +102,9 @@ body{
 .trendtable td{
   padding-right:75px;
   padding-top:25px;
-  padding-left: 60px;
+  padding-left: 50px;
   margin:auto;
-  width:
+  width: 100px;
 }
 
 
@@ -263,4 +263,13 @@ img {vertical-align: middle;}
 
 .login p{
   margin:25px auto 25px auto;
+}
+
+.trending{
+  width: 1500px;
+  margin:auto;
+}
+
+.trendtable{
+  width: 100px;
 }
